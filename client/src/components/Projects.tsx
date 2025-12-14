@@ -7,6 +7,23 @@ export default function Projects() {
 
   const projects = [
     {
+      title: "BeHeart App",
+      category: t('project_cat_mobile'),
+      description: t('project_beheart_desc'),
+      tech: ["Flutter", "PPG Signals", "HealthKit"],
+      link: "https://play.google.com/store/apps/details?id=com.beheart.app", // Assuming generic link, user can update
+      featured: true,
+      highlight: true
+    },
+    {
+      title: "Libras AI Transcription",
+      category: t('project_cat_cv'),
+      description: t('project_opencv_desc'),
+      tech: ["OpenCV", "MediaPipe", "Python"],
+      link: "https://github.com/Nerdzter/OpenCV-MediaPipe/settings",
+      featured: true
+    },
+    {
       title: "HackMeter",
       category: t('project_cat_intel'),
       description: t('project_hackmeter_desc'),
@@ -28,7 +45,7 @@ export default function Projects() {
       description: t('project_estoque_desc'),
       tech: ["Fullstack", "Automation", "React"],
       link: "https://github.com/nerdzter/EstoquePeliculas",
-      featured: true
+      featured: false
     },
     {
       title: "Auth API Node",
@@ -36,22 +53,6 @@ export default function Projects() {
       description: t('project_auth_desc'),
       tech: ["Node.js", "JWT", "Security"],
       link: "https://github.com/nerdzter/auth-api-node",
-      featured: false
-    },
-    {
-      title: "Android Manager",
-      category: t('project_cat_security'),
-      description: t('project_android_desc'),
-      tech: ["Android", "Java", "Security"],
-      link: "https://github.com/nerdzter/NayTec-Android-Manager",
-      featured: false
-    },
-    {
-      title: "Gestão OS",
-      category: t('project_cat_business'),
-      description: t('project_gestao_desc'),
-      tech: ["C++", "Database", "System Design"],
-      link: "https://github.com/nerdzter/gest-oOS",
       featured: false
     }
   ];

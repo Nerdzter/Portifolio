@@ -64,19 +64,19 @@ export const translations: Translations = {
   projects_view_github: { en: "VIEW ALL REPOSITORIES ON GITHUB", pt: "VER TODOS OS REPOSITÓRIOS NO GITHUB", es: "VER TODOS LOS REPOSITORIOS EN GITHUB" },
   
   // Project Descriptions (Assuming static for now, but could be dynamic)
+  project_beheart_desc: { en: "Mobile health revolution. Real-time PPG signal processing, physiological data analysis. Available on App Store & Play Store.", pt: "Revolução na saúde móvel. Processamento de sinais PPG em tempo real, análise de dados fisiológicos. Disponível na App Store e Play Store.", es: "Revolución en salud móvil. Procesamiento de señales PPG en tiempo real, análisis de datos fisiológicos. Disponible en App Store y Play Store." },
+  project_opencv_desc: { en: "AI-powered Sign Language transcription. Computer vision translating gestures into text in real-time. Breaking communication barriers.", pt: "Transcrição de Libras impulsionada por IA. Visão computacional traduzindo gestos em texto em tempo real. Quebrando barreiras de comunicação.", es: "Transcripción de lenguaje de señas impulsada por IA. Visión por computadora traduciendo gestos a texto en tiempo real. Rompiendo barreras de comunicación." },
   project_hackmeter_desc: { en: "Automated digital intelligence. Investigate anything, generate live dossiers. For people who want answers — not just 'big data'.", pt: "Inteligência digital automatizada. Investigue qualquer coisa, gere dossiês ao vivo. Para quem quer respostas — não apenas 'big data'.", es: "Inteligencia digital automatizada. Investiga cualquier cosa, genera expedientes en vivo. Para quienes quieren respuestas — no solo 'big data'." },
   project_botwhatsapp_desc: { en: "Sells and supports on autopilot. Gemini AI, automated sales, 24/7 response, running in the wild — not just another MVP.", pt: "Vende e dá suporte no piloto automático. Gemini AI, vendas automatizadas, resposta 24/7, rodando no mundo real — não apenas mais um MVP.", es: "Vende y da soporte en piloto automático. Gemini AI, ventas automatizadas, respuesta 24/7, funcionando en el mundo real — no solo otro MVP." },
   project_estoque_desc: { en: "Stock control on steroids. Cut 2 days of work to 2 clicks. WhatsApp automated reports. Solving real problems.", pt: "Controle de estoque anabolizado. Reduza 2 dias de trabalho para 2 cliques. Relatórios automatizados via WhatsApp. Resolvendo problemas reais.", es: "Control de stock con esteroides. Reduce 2 días de trabajo a 2 clics. Informes automatizados por WhatsApp. Resolviendo problemas reales." },
   project_auth_desc: { en: "JWT Auth API. Foundation for any SaaS — simple, robust, production-ready.", pt: "API de Autenticação JWT. Fundação para qualquer SaaS — simples, robusta, pronta para produção.", es: "API de Autenticación JWT. Fundación para cualquier SaaS — simple, robusta, lista para producción." },
-  project_android_desc: { en: "Removes malware, no factory reset. Technical dashboard, more revenue for real shops.", pt: "Remove malware, sem reset de fábrica. Dashboard técnico, mais receita para lojas reais.", es: "Elimina malware, sin restablecimiento de fábrica. Panel técnico, más ingresos para tiendas reales." },
-  project_gestao_desc: { en: "Zero-paper service management. Real-time OS tracking, from technician to client.", pt: "Gestão de serviços zero papel. Rastreamento de OS em tempo real, do técnico ao cliente.", es: "Gestión de servicios cero papel. Seguimiento de OS en tiempo real, del técnico al cliente." },
   
+  project_cat_mobile: { en: "Mobile Engineering", pt: "Engenharia Mobile", es: "Ingeniería Móvil" },
+  project_cat_cv: { en: "Computer Vision / AI", pt: "Visão Computacional / IA", es: "Visión por Computadora / IA" },
   project_cat_intel: { en: "Intelligence / Automation", pt: "Inteligência / Automação", es: "Inteligencia / Automatización" },
   project_cat_ai: { en: "AI / Sales", pt: "IA / Vendas", es: "IA / Ventas" },
   project_cat_mgmt: { en: "Management System", pt: "Sistema de Gestão", es: "Sistema de Gestión" },
   project_cat_backend: { en: "Backend Infrastructure", pt: "Infraestrutura Backend", es: "Infraestructura Backend" },
-  project_cat_security: { en: "Security Tool", pt: "Ferramenta de Segurança", es: "Herramienta de Seguridad" },
-  project_cat_business: { en: "Business Logic", pt: "Lógica de Negócios", es: "Lógica de Negocios" },
 
 
   // Contact

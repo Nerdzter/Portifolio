@@ -90,12 +90,12 @@ export default function About() {
             <div className="relative w-full aspect-[4/3] overflow-hidden border border-primary/20 group">
               <div className="absolute inset-0 bg-primary/10 group-hover:bg-transparent transition-colors z-10"></div>
               <img 
-                src="/images/nayderson-speaker.jpg" 
-                alt="Nayderson Oliveira Speaker" 
+                src="/images/nayderson-exchange.png" 
+                alt="Nayderson Oliveira - International Exchange" 
                 className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
               />
               <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/90 to-transparent z-20">
-                <div className="font-mono text-xs text-primary uppercase tracking-widest">Speaker & Leader</div>
+                <div className="font-mono text-xs text-primary uppercase tracking-widest">Global Mindset</div>
               </div>
             </div>
 

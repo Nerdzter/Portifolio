@@ -72,7 +72,7 @@ export default function Hero() {
             </div>
           </motion.div>
 
-          {/* Abstract visual element */}
+          {/* Main Photo Visual Element */}
           <motion.div 
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -87,14 +87,14 @@ export default function Hero() {
               
               <div className="w-full h-full flex items-center justify-center overflow-hidden">
                 <img 
-                  src="/images/philosophy-abstract.jpg" 
-                  alt="System Architecture Abstract" 
-                  className="w-full h-full object-cover opacity-80 grayscale hover:grayscale-0 transition-all duration-700"
+                  src="/images/nayderson-main.png" 
+                  alt="Nayderson Oliveira" 
+                  className="w-full h-full object-cover opacity-90 grayscale hover:grayscale-0 transition-all duration-700"
                 />
               </div>
               
               <div className="absolute -bottom-6 -right-6 text-xs font-mono text-muted-foreground">
-                FIG. 01 // ARCHITECTURE
+                FIG. 01 // ARCHITECT
               </div>
             </div>
           </motion.div>
