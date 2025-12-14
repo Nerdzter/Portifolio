@@ -130,7 +130,7 @@ export default function About() {
                 <div className="mt-8 pt-8 border-t border-border">
                   <h4 className="font-mono text-sm text-muted-foreground mb-4">{t('about_core_stack')}</h4>
                   <div className="flex flex-wrap gap-2">
-                    {["TypeScript", "Python", "C++", "Java", "Swift", "Flutter", "GCP", "Node.js", "React"].map((tech) => (
+                    {["TypeScript", "Python", "C", "Java", "Swift", "Flutter", "GCP", "Node.js", "React"].map((tech) => (
                       <span key={tech} className="px-3 py-1 bg-secondary text-secondary-foreground text-xs font-mono border border-border hover:border-primary transition-colors cursor-default">
                         {tech}
                       </span>
