@@ -64,10 +64,10 @@ export default function Hero() {
                 {t('hero_cta_projects')}
               </a>
               <a 
-                href="#contact" 
+                href="/cv" 
                 className="inline-flex items-center justify-center px-8 py-4 text-sm font-bold tracking-widest uppercase bg-transparent text-foreground border border-border hover:bg-secondary/50 transition-all hover:border-primary/50"
               >
-                {t('hero_cta_contact')}
+                VIEW_CV_PROTOCOL
               </a>
             </div>
           </motion.div>
