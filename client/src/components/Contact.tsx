@@ -1,7 +1,10 @@
+import { useLanguage } from "@/contexts/LanguageContext";
 import { motion } from "framer-motion";
 import { Github, Linkedin, Mail, MapPin } from "lucide-react";
 
 export default function Contact() {
+  const { t } = useLanguage();
+
   return (
     <section id="contact" className="py-24 bg-background relative border-t border-white/5">
       <div className="container px-4 md:px-6">
@@ -14,14 +17,14 @@ export default function Contact() {
             transition={{ duration: 0.6 }}
           >
             <div className="inline-block mb-4 px-2 py-1 border border-primary/30 text-xs font-mono text-primary uppercase tracking-widest">
-              // 03. Communication
+              // 03. {t('contact_comm')}
             </div>
             <h2 className="text-4xl md:text-6xl font-bold tracking-tighter text-white mb-6">
-              LET'S MAKE IT <br/>
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-blue-600">HAPPEN</span>
+              {t('contact_title_1')} <br/>
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-blue-600">{t('contact_title_2')}</span>
             </h2>
             <p className="text-xl text-muted-foreground mb-8 max-w-md">
-              "Dreaming small is not my thing. Code that impacts, story that inspires."
+              {t('contact_quote')}
             </p>
 
             <div className="space-y-6 font-mono text-sm">
@@ -29,14 +32,14 @@ export default function Contact() {
                 <div className="w-10 h-10 flex items-center justify-center border border-white/10 bg-white/5">
                   <MapPin className="h-4 w-4" />
                 </div>
-                <span>Barbacena - MG, Brazil</span>
+                <span>{t('contact_location')}</span>
               </div>
               
               <a href="mailto:contact@nayderson.dev" className="flex items-center gap-4 text-muted-foreground hover:text-white transition-colors group">
                 <div className="w-10 h-10 flex items-center justify-center border border-white/10 bg-white/5 group-hover:border-primary/50 group-hover:text-primary transition-colors">
                   <Mail className="h-4 w-4" />
                 </div>
-                <span>Available for new opportunities</span>
+                <span>{t('contact_available')}</span>
               </a>
             </div>
 
@@ -73,16 +76,16 @@ export default function Contact() {
             <div className="border border-white/10 bg-black/50 backdrop-blur-sm p-8 md:p-12">
               <form className="space-y-6">
                 <div className="space-y-2">
-                  <label htmlFor="name" className="text-xs font-mono uppercase text-muted-foreground">Name</label>
+                  <label htmlFor="name" className="text-xs font-mono uppercase text-muted-foreground">{t('contact_name')}</label>
                   <input 
                     type="text" 
                     id="name"
                     className="w-full bg-white/5 border border-white/10 px-4 py-3 text-white focus:outline-none focus:border-primary focus:bg-white/10 transition-colors"
-                    placeholder="John Doe"
+                    placeholder={t('contact_placeholder_name')}
                   />
                 </div>
                 <div className="space-y-2">
-                  <label htmlFor="email" className="text-xs font-mono uppercase text-muted-foreground">Email</label>
+                  <label htmlFor="email" className="text-xs font-mono uppercase text-muted-foreground">{t('contact_email')}</label>
                   <input 
                     type="email" 
                     id="email"
@@ -91,19 +94,19 @@ export default function Contact() {
                   />
                 </div>
                 <div className="space-y-2">
-                  <label htmlFor="message" className="text-xs font-mono uppercase text-muted-foreground">Message</label>
+                  <label htmlFor="message" className="text-xs font-mono uppercase text-muted-foreground">{t('contact_message')}</label>
                   <textarea 
                     id="message"
                     rows={4}
                     className="w-full bg-white/5 border border-white/10 px-4 py-3 text-white focus:outline-none focus:border-primary focus:bg-white/10 transition-colors resize-none"
-                    placeholder="Tell me about your project..."
+                    placeholder={t('contact_placeholder_message')}
                   ></textarea>
                 </div>
                 <button 
                   type="submit"
                   className="w-full bg-primary text-white font-bold uppercase tracking-widest py-4 hover:bg-primary/90 transition-colors"
                 >
-                  Send Transmission
+                  {t('contact_send')}
                 </button>
               </form>
             </div>
@@ -113,10 +116,10 @@ export default function Contact() {
         
         <div className="mt-24 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-muted-foreground font-mono">
           <div>
-            © {new Date().getFullYear()} NAYDERSON OLIVEIRA. ALL RIGHTS RESERVED.
+            © {new Date().getFullYear()} NAYDERSON OLIVEIRA. {t('contact_rights')}
           </div>
           <div className="flex gap-6">
-            <span>SYSTEM_STATUS: ONLINE</span>
+            <span>{t('contact_status')}</span>
             <span>V.1.0.0</span>
           </div>
         </div>

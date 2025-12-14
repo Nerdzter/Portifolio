@@ -1,58 +1,61 @@
+import { useLanguage } from "@/contexts/LanguageContext";
 import { motion } from "framer-motion";
 import { ArrowUpRight, Github } from "lucide-react";
 
-const projects = [
-  {
-    title: "HackMeter",
-    category: "Intelligence / Automation",
-    description: "Automated digital intelligence. Investigate anything, generate live dossiers. For people who want answers — not just 'big data'.",
-    tech: ["Python", "OSINT", "Automation"],
-    link: "https://github.com/nerdzter/HackMeter",
-    featured: true
-  },
-  {
-    title: "Bot-Whatsapp",
-    category: "AI / Sales",
-    description: "Sells and supports on autopilot. Gemini AI, automated sales, 24/7 response, running in the wild — not just another MVP.",
-    tech: ["Node.js", "Gemini AI", "WhatsApp API"],
-    link: "https://github.com/nerdzter/Bot-Whatsapp",
-    featured: true
-  },
-  {
-    title: "Estoque Películas",
-    category: "Management System",
-    description: "Stock control on steroids. Cut 2 days of work to 2 clicks. WhatsApp automated reports. Solving real problems.",
-    tech: ["Fullstack", "Automation", "React"],
-    link: "https://github.com/nerdzter/EstoquePeliculas",
-    featured: true
-  },
-  {
-    title: "Auth API Node",
-    category: "Backend Infrastructure",
-    description: "JWT Auth API. Foundation for any SaaS — simple, robust, production-ready.",
-    tech: ["Node.js", "JWT", "Security"],
-    link: "https://github.com/nerdzter/auth-api-node",
-    featured: false
-  },
-  {
-    title: "Android Manager",
-    category: "Security Tool",
-    description: "Removes malware, no factory reset. Technical dashboard, more revenue for real shops.",
-    tech: ["Android", "Java", "Security"],
-    link: "https://github.com/nerdzter/NayTec-Android-Manager",
-    featured: false
-  },
-  {
-    title: "Gestão OS",
-    category: "Business Logic",
-    description: "Zero-paper service management. Real-time OS tracking, from technician to client.",
-    tech: ["C++", "Database", "System Design"],
-    link: "https://github.com/nerdzter/gest-oOS",
-    featured: false
-  }
-];
-
 export default function Projects() {
+  const { t } = useLanguage();
+
+  const projects = [
+    {
+      title: "HackMeter",
+      category: t('project_cat_intel'),
+      description: t('project_hackmeter_desc'),
+      tech: ["Python", "OSINT", "Automation"],
+      link: "https://github.com/nerdzter/HackMeter",
+      featured: true
+    },
+    {
+      title: "Bot-Whatsapp",
+      category: t('project_cat_ai'),
+      description: t('project_botwhatsapp_desc'),
+      tech: ["Node.js", "Gemini AI", "WhatsApp API"],
+      link: "https://github.com/nerdzter/Bot-Whatsapp",
+      featured: true
+    },
+    {
+      title: "Estoque Películas",
+      category: t('project_cat_mgmt'),
+      description: t('project_estoque_desc'),
+      tech: ["Fullstack", "Automation", "React"],
+      link: "https://github.com/nerdzter/EstoquePeliculas",
+      featured: true
+    },
+    {
+      title: "Auth API Node",
+      category: t('project_cat_backend'),
+      description: t('project_auth_desc'),
+      tech: ["Node.js", "JWT", "Security"],
+      link: "https://github.com/nerdzter/auth-api-node",
+      featured: false
+    },
+    {
+      title: "Android Manager",
+      category: t('project_cat_security'),
+      description: t('project_android_desc'),
+      tech: ["Android", "Java", "Security"],
+      link: "https://github.com/nerdzter/NayTec-Android-Manager",
+      featured: false
+    },
+    {
+      title: "Gestão OS",
+      category: t('project_cat_business'),
+      description: t('project_gestao_desc'),
+      tech: ["C++", "Database", "System Design"],
+      link: "https://github.com/nerdzter/gest-oOS",
+      featured: false
+    }
+  ];
+
   return (
     <section id="projects" className="py-24 bg-black relative">
       {/* Background Grid */}
@@ -64,14 +67,14 @@ export default function Projects() {
         <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
           <div>
             <div className="inline-block mb-4 px-2 py-1 border border-primary/30 text-xs font-mono text-primary uppercase tracking-widest">
-              // 02. Selected Works
+              // 02. {t('projects_selected_works')}
             </div>
             <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-white">
-              SYSTEM <br/> PROTOCOLS
+              {t('projects_title')}
             </h2>
           </div>
           <div className="max-w-md text-muted-foreground text-sm md:text-base text-right md:text-left">
-            A collection of systems engineered for performance, scalability, and real-world impact.
+            {t('projects_subtitle')}
           </div>
         </div>
 
@@ -133,7 +136,7 @@ export default function Projects() {
             className="inline-flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors font-mono text-sm border-b border-transparent hover:border-primary pb-1"
           >
             <Github className="h-4 w-4" />
-            VIEW ALL REPOSITORIES ON GITHUB
+            {t('projects_view_github')}
           </a>
         </div>
       </div>

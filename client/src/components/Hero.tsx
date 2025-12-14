@@ -1,7 +1,10 @@
+import { useLanguage } from "@/contexts/LanguageContext";
 import { motion } from "framer-motion";
 import { ArrowDown, Terminal } from "lucide-react";
 
 export default function Hero() {
+  const { t } = useLanguage();
+
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-background">
       {/* Background Image with Overlay */}
@@ -30,7 +33,7 @@ export default function Hero() {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
               </span>
-              SYSTEM_ONLINE
+              {t('hero_system_online')}
             </div>
 
             <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tighter text-foreground">
@@ -42,13 +45,13 @@ export default function Hero() {
 
             <div className="max-w-2xl space-y-4">
               <p className="text-xl md:text-2xl text-muted-foreground font-light border-l-2 border-primary pl-4">
-                "In life, you either create opportunities, or you're just a spectator."
+                {t('hero_tagline')}
               </p>
               
               <p className="text-lg text-foreground/80 font-mono pt-4">
-                <span className="text-primary">&gt;</span> Fullstack Software Developer<br/>
-                <span className="text-primary">&gt;</span> Mobile Engineering Specialist<br/>
-                <span className="text-primary">&gt;</span> AI/ML Enthusiast
+                <span className="text-primary">&gt;</span> {t('hero_role_1')}<br/>
+                <span className="text-primary">&gt;</span> {t('hero_role_2')}<br/>
+                <span className="text-primary">&gt;</span> {t('hero_role_3')}
               </p>
             </div>
 
@@ -58,13 +61,13 @@ export default function Hero() {
                 className="inline-flex items-center justify-center px-8 py-4 text-sm font-bold tracking-widest uppercase bg-primary text-primary-foreground hover:bg-primary/90 transition-all border border-primary hover:shadow-[0_0_20px_rgba(124,58,237,0.5)]"
               >
                 <Terminal className="mr-2 h-4 w-4" />
-                View Protocols
+                {t('hero_cta_projects')}
               </a>
               <a 
                 href="#contact" 
                 className="inline-flex items-center justify-center px-8 py-4 text-sm font-bold tracking-widest uppercase bg-transparent text-foreground border border-border hover:bg-secondary/50 transition-all hover:border-primary/50"
               >
-                Initialize Contact
+                {t('hero_cta_contact')}
               </a>
             </div>
           </motion.div>
@@ -105,7 +108,7 @@ export default function Hero() {
         className="absolute bottom-8 left-1/2 -translate-x-1/2"
       >
         <a href="#about" className="flex flex-col items-center gap-2 text-muted-foreground hover:text-primary transition-colors">
-          <span className="text-[10px] uppercase tracking-[0.2em]">Scroll</span>
+          <span className="text-[10px] uppercase tracking-[0.2em]">{t('hero_scroll')}</span>
           <ArrowDown className="h-4 w-4 animate-bounce" />
         </a>
       </motion.div>
