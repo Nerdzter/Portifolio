@@ -35,14 +35,14 @@ export const translations: Translations = {
   about_title_1: { en: "THE ARCHITECT", pt: "O ARQUITETO", es: "EL ARQUITECTO" },
   about_title_2: { en: "BEHIND THE CODE", pt: "POR TRÁS DO CÓDIGO", es: "DETRÁS DEL CÓDIGO" },
   about_desc_1: { 
-    en: "I'm Nayderson — I didn't start with privilege. By 19, I was already selected for 4 international exchanges. I build systems that grow real businesses. My code solves, automates, and scales. If you want average, look elsewhere.", 
-    pt: "Sou Nayderson — não comecei com privilégios. Aos 19 anos, já fui selecionado para 4 intercâmbios internacionais. Construo sistemas que fazem negócios reais crescerem. Meu código resolve, automatiza e escala. Se você quer o mediano, procure em outro lugar.", 
-    es: "Soy Nayderson — no empecé con privilegios. A los 19 años, ya fui seleccionado para 4 intercambios internacionales. Construyo sistemas que hacen crecer negocios reales. Mi código resuelve, automatiza y escala. Si buscas lo promedio, busca en otro lugar." 
+    en: "It started early. At 13, while others played, I was already coding, fueled by an OBMEP medal and a hunger to build. I never stopped. By 19, that relentless drive earned me approvals for 4 international exchanges, including Data Science studies in London at Bayswater College.", 
+    pt: "Começou cedo. Aos 13 anos, enquanto outros brincavam, eu já codificava, impulsionado por uma medalha da OBMEP e uma fome de construir. Nunca parei. Aos 19, essa determinação implacável me garantiu aprovações em 4 intercâmbios internacionais, incluindo estudos de Data Science em Londres na Bayswater College.", 
+    es: "Empezó temprano. A los 13 años, mientras otros jugaban, yo ya codificaba, impulsado por una medalla de la OBMEP y hambre de construir. Nunca paré. A los 19, esa determinación implacable me aseguró aprobaciones en 4 intercambios internacionales, incluyendo estudios de Data Science en Londres en Bayswater College." 
   },
   about_desc_2: { 
-    en: "Currently working as a Software Developer at BeHeart, focusing on mobile engineering, PPG signals, and physiological data processing. I'm expanding into AI/ML to improve biometric efficiencies.", 
-    pt: "Atualmente trabalhando como Desenvolvedor de Software na BeHeart, focado em engenharia mobile, sinais PPG e processamento de dados fisiológicos. Estou expandindo para IA/ML para melhorar eficiências biométricas.", 
-    es: "Actualmente trabajando como Desarrollador de Software en BeHeart, enfocado en ingeniería móvil, señales PPG y procesamiento de datos fisiológicos. Me estoy expandiendo hacia IA/ML para mejorar eficiencias biométricas." 
+    en: "I've always been a builder. From freelancing for lawyers and e-commerce stores to mastering mobile engineering and AI. Today, as a Computer Science student at UNIPAC and Developer at BeHeart, I don't just write code—I engineer solutions. My studies in AI and mobile are not just academic; they are tools I sharpen daily to solve real-world problems.", 
+    pt: "Sempre fui um construtor. Do freelance para advogados e lojas virtuais até dominar engenharia mobile e IA. Hoje, como estudante de Ciência da Computação na UNIPAC e Desenvolvedor na BeHeart, não apenas escrevo código — eu projeto soluções. Meus estudos em IA e mobile não são apenas acadêmicos; são ferramentas que afio diariamente para resolver problemas reais.", 
+    es: "Siempre fui un constructor. Desde freelance para abogados y tiendas virtuales hasta dominar ingeniería móvil e IA. Hoy, como estudiante de Ciencias de la Computación en UNIPAC y Desarrollador en BeHeart, no solo escribo código — diseño soluciones. Mis estudios en IA y móvil no son solo académicos; son herramientas que afilo diariamente para resolver problemas reales." 
   },
   about_feature_1_title: { en: "Brutal Execution", pt: "Execução Brutal", es: "Ejecución Brutal" },
   about_feature_1_desc: { en: "I don't just talk. I ship, I improve, I scale. Speed and quality are not mutually exclusive.", pt: "Eu não apenas falo. Eu entrego, melhoro, escalo. Velocidade e qualidade não são mutuamente exclusivas.", es: "No solo hablo. Entrego, mejoro, escalo. Velocidad y calidad no son mutuamente excluyentes." },
@@ -85,7 +85,8 @@ export const translations: Translations = {
   contact_title_2: { en: "HAPPEN", pt: "ACONTECER", es: "SUCEDA" },
   contact_quote: { en: "\"Dreaming small is not my thing. Code that impacts, story that inspires.\"", pt: "\"Sonhar pequeno não é comigo. Código que impacta, história que inspira.\"", es: "\"Soñar en pequeño no es lo mío. Código que impacta, historia que inspira.\"" },
   contact_location: { en: "Barbacena - MG, Brazil", pt: "Barbacena - MG, Brasil", es: "Barbacena - MG, Brasil" },
-  contact_available: { en: "Available for new opportunities", pt: "Disponível para novas oportunidades", es: "Disponible para nuevas oportunidades" },
+  contact_available: { en: "nayderson.contato@gmail.com", pt: "nayderson.contato@gmail.com", es: "nayderson.contato@gmail.com" },
+  contact_phone: { en: "+55 32 99823-6530", pt: "+55 32 99823-6530", es: "+55 32 99823-6530" },
   contact_name: { en: "Name", pt: "Nome", es: "Nombre" },
   contact_email: { en: "Email", pt: "Email", es: "Email" },
   contact_message: { en: "Message", pt: "Mensagem", es: "Mensaje" },

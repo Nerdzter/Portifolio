@@ -5,7 +5,7 @@ export default function MouseFollower() {
   const mouseX = useMotionValue(0);
   const mouseY = useMotionValue(0);
 
-  const springConfig = { damping: 25, stiffness: 150 };
+  const springConfig = { damping: 20, stiffness: 300, mass: 0.5 };
   const x = useSpring(mouseX, springConfig);
   const y = useSpring(mouseY, springConfig);
 
@@ -20,11 +20,25 @@ export default function MouseFollower() {
   }, [mouseX, mouseY]);
 
   return (
-    <motion.div
-      className="fixed top-0 left-0 w-8 h-8 rounded-full border border-primary/50 pointer-events-none z-50 hidden md:block mix-blend-difference"
-      style={{ x, y, translateX: "-50%", translateY: "-50%" }}
-    >
-      <div className="absolute inset-0 bg-primary/20 rounded-full blur-sm animate-pulse"></div>
-    </motion.div>
+    <>
+      {/* Main Cursor */}
+      <motion.div
+        className="fixed top-0 left-0 w-4 h-4 rounded-full bg-primary pointer-events-none z-50 hidden md:block mix-blend-difference"
+        style={{ x, y, translateX: "-50%", translateY: "-50%" }}
+      />
+      
+      {/* Glow Effect */}
+      <motion.div
+        className="fixed top-0 left-0 w-96 h-96 rounded-full bg-primary/10 pointer-events-none z-0 hidden md:block blur-3xl"
+        style={{ x, y, translateX: "-50%", translateY: "-50%" }}
+      />
+      
+      {/* Outer Ring */}
+      <motion.div
+        className="fixed top-0 left-0 w-12 h-12 rounded-full border border-primary/30 pointer-events-none z-50 hidden md:block"
+        style={{ x, y, translateX: "-50%", translateY: "-50%" }}
+        transition={{ type: "spring", damping: 30, stiffness: 200 }}
+      />
+    </>
   );
 }

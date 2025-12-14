@@ -47,14 +47,15 @@ export default function ParticleBackground() {
         const dx = mouseX - this.x;
         const dy = mouseY - this.y;
         const distance = Math.sqrt(dx * dx + dy * dy);
-        const maxDistance = 150;
+        const maxDistance = 200;
 
         if (distance < maxDistance) {
           const forceDirectionX = dx / distance;
           const forceDirectionY = dy / distance;
           const force = (maxDistance - distance) / maxDistance;
-          const directionX = forceDirectionX * force * 2;
-          const directionY = forceDirectionY * force * 2;
+          // Gentler repulsion for more fluid feel
+          const directionX = forceDirectionX * force * 1.5;
+          const directionY = forceDirectionY * force * 1.5;
 
           this.x -= directionX;
           this.y -= directionY;

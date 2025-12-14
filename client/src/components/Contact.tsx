@@ -35,11 +35,18 @@ export default function Contact() {
                 <span>{t('contact_location')}</span>
               </div>
               
-              <a href="mailto:contact@nayderson.dev" className="flex items-center gap-4 text-muted-foreground hover:text-white transition-colors group">
+              <a href="mailto:nayderson.contato@gmail.com" className="flex items-center gap-4 text-muted-foreground hover:text-white transition-colors group">
                 <div className="w-10 h-10 flex items-center justify-center border border-white/10 bg-white/5 group-hover:border-primary/50 group-hover:text-primary transition-colors">
                   <Mail className="h-4 w-4" />
                 </div>
                 <span>{t('contact_available')}</span>
+              </a>
+
+              <a href="tel:+5532998236530" className="flex items-center gap-4 text-muted-foreground hover:text-white transition-colors group">
+                <div className="w-10 h-10 flex items-center justify-center border border-white/10 bg-white/5 group-hover:border-primary/50 group-hover:text-primary transition-colors">
+                  <span className="text-xs">TEL</span>
+                </div>
+                <span>{t('contact_phone')}</span>
               </a>
             </div>
 
